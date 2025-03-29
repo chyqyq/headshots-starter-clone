@@ -71,9 +71,6 @@ export default function Home() {
             >
               Create Your Portraits
             </Link>
-            <a href="#features" className="text-sm font-semibold leading-6">
-              View Examples <span aria-hidden="true">→</span>
-            </a>
           </div>
         </div>
       </div>
@@ -90,7 +87,7 @@ export default function Home() {
               <p className="text-sm mb-4">Share 4-6 clear photos showing different angles</p>
               <div className="overflow-hidden rounded-lg shadow-md bg-white h-40 flex items-center justify-center">
                 <img 
-                  src="https://images.unsplash.com/photo-1633674443877-4130ecd087c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=256&h=256&q=80" 
+                  src="https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?ixlib=rb-4.0.3&auto=format&fit=crop&w=256&h=256&q=80" 
                   alt="Upload Images Example" 
                   className="w-full h-full object-cover"
                 />
@@ -104,7 +101,7 @@ export default function Home() {
               <p className="text-sm mb-4">Browse our collection of professional styles</p>
               <div className="overflow-hidden rounded-lg shadow-md bg-white h-40 flex items-center justify-center">
                 <img 
-                  src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&auto=format&fit=crop&w=256&h=256&q=80" 
+                  src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-4.0.3&auto=format&fit=crop&w=256&h=256&q=80" 
                   alt="Select Style Example" 
                   className="w-full h-full object-cover"
                 />
@@ -132,7 +129,7 @@ export default function Home() {
               <p className="text-sm mb-4">Use your new headshots across all platforms</p>
               <div className="overflow-hidden rounded-lg shadow-md bg-white h-40 flex items-center justify-center">
                 <img 
-                  src="https://images.unsplash.com/photo-1566492031773-4f4e44671857?ixlib=rb-4.0.3&auto=format&fit=crop&w=256&h=256&q=80" 
+                  src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=256&h=256&q=80" 
                   alt="Final Results Example" 
                   className="w-full h-full object-cover"
                 />
