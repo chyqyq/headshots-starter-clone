@@ -35,6 +35,41 @@ export default async function Home() {
           <p className="mt-6 text-lg leading-8 text-gray-600">
             Transform Your Photos into Premium Headshots in Minutes
           </p>
+          
+          {/* 添加人像图片展示区域 */}
+          <div className="mt-8 grid grid-cols-3 gap-4 max-w-3xl mx-auto">
+            <div className="overflow-hidden rounded-lg shadow-md bg-white">
+              <img 
+                src="/sample-1.jpg" 
+                alt="Professional Headshot Sample 1" 
+                className="w-full h-auto object-cover"
+                onError={(e) => {
+                  e.currentTarget.src = "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=256&h=256&q=80";
+                }}
+              />
+            </div>
+            <div className="overflow-hidden rounded-lg shadow-md bg-white">
+              <img 
+                src="/sample-2.jpg" 
+                alt="Professional Headshot Sample 2" 
+                className="w-full h-auto object-cover"
+                onError={(e) => {
+                  e.currentTarget.src = "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=256&h=256&q=80";
+                }}
+              />
+            </div>
+            <div className="overflow-hidden rounded-lg shadow-md bg-white">
+              <img 
+                src="/sample-3.jpg" 
+                alt="Professional Headshot Sample 3" 
+                className="w-full h-auto object-cover"
+                onError={(e) => {
+                  e.currentTarget.src = "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=256&h=256&q=80";
+                }}
+              />
+            </div>
+          </div>
+          
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <Link 
               href="/signin"
@@ -81,28 +116,68 @@ export default async function Home() {
                 <span className="text-2xl font-bold text-primary">1</span>
               </div>
               <h3 className="font-semibold mb-2">Upload Images</h3>
-              <p className="text-sm">Share 4-6 clear photos showing different angles</p>
+              <p className="text-sm mb-4">Share 4-6 clear photos showing different angles</p>
+              <div className="overflow-hidden rounded-lg shadow-md bg-white h-40 flex items-center justify-center">
+                <img 
+                  src="/upload-sample.jpg" 
+                  alt="Upload Images Example" 
+                  className="w-full h-full object-cover"
+                  onError={(e) => {
+                    e.currentTarget.src = "https://images.unsplash.com/photo-1633674443877-4130ecd087c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=256&h=256&q=80";
+                  }}
+                />
+              </div>
             </div>
             <div className="text-center">
               <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl font-bold text-primary">2</span>
               </div>
               <h3 className="font-semibold mb-2">Select Your Look</h3>
-              <p className="text-sm">Browse our collection of professional styles</p>
+              <p className="text-sm mb-4">Browse our collection of professional styles</p>
+              <div className="overflow-hidden rounded-lg shadow-md bg-white h-40 flex items-center justify-center">
+                <img 
+                  src="/style-sample.jpg" 
+                  alt="Select Style Example" 
+                  className="w-full h-full object-cover"
+                  onError={(e) => {
+                    e.currentTarget.src = "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&auto=format&fit=crop&w=256&h=256&q=80";
+                  }}
+                />
+              </div>
             </div>
             <div className="text-center">
               <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl font-bold text-primary">3</span>
               </div>
               <h3 className="font-semibold mb-2">AI Magic</h3>
-              <p className="text-sm">Our advanced algorithms create your custom portraits</p>
+              <p className="text-sm mb-4">Our advanced algorithms create your custom portraits</p>
+              <div className="overflow-hidden rounded-lg shadow-md bg-white h-40 flex items-center justify-center">
+                <img 
+                  src="/processing-sample.jpg" 
+                  alt="AI Processing Example" 
+                  className="w-full h-full object-cover"
+                  onError={(e) => {
+                    e.currentTarget.src = "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=256&h=256&q=80";
+                  }}
+                />
+              </div>
             </div>
             <div className="text-center">
               <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl font-bold text-primary">4</span>
               </div>
               <h3 className="font-semibold mb-2">Download & Share</h3>
-              <p className="text-sm">Use your new headshots across all platforms</p>
+              <p className="text-sm mb-4">Use your new headshots across all platforms</p>
+              <div className="overflow-hidden rounded-lg shadow-md bg-white h-40 flex items-center justify-center">
+                <img 
+                  src="/result-sample.jpg" 
+                  alt="Final Results Example" 
+                  className="w-full h-full object-cover"
+                  onError={(e) => {
+                    e.currentTarget.src = "https://images.unsplash.com/photo-1566492031773-4f4e44671857?ixlib=rb-4.0.3&auto=format&fit=crop&w=256&h=256&q=80";
+                  }}
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -143,7 +218,14 @@ export default async function Home() {
             <div className="bg-white p-6 rounded-lg shadow-sm border">
               <div className="flex items-center mb-4">
                 <div className="mr-4">
-                  <div className="w-12 h-12 rounded-full bg-gray-200"></div>
+                  <img 
+                    src="/testimonial1.jpg" 
+                    alt="Emma Richardson" 
+                    className="w-12 h-12 rounded-full object-cover"
+                    onError={(e) => {
+                      e.currentTarget.src = "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=256&h=256&q=80";
+                    }}
+                  />
                 </div>
                 <div>
                   <h3 className="font-semibold">Emma Richardson</h3>
@@ -157,7 +239,14 @@ export default async function Home() {
             <div className="bg-white p-6 rounded-lg shadow-sm border">
               <div className="flex items-center mb-4">
                 <div className="mr-4">
-                  <div className="w-12 h-12 rounded-full bg-gray-200"></div>
+                  <img 
+                    src="/testimonial2.jpg" 
+                    alt="David Wilson" 
+                    className="w-12 h-12 rounded-full object-cover"
+                    onError={(e) => {
+                      e.currentTarget.src = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=256&h=256&q=80";
+                    }}
+                  />
                 </div>
                 <div>
                   <h3 className="font-semibold">David Wilson</h3>
@@ -171,7 +260,14 @@ export default async function Home() {
             <div className="bg-white p-6 rounded-lg shadow-sm border">
               <div className="flex items-center mb-4">
                 <div className="mr-4">
-                  <div className="w-12 h-12 rounded-full bg-gray-200"></div>
+                  <img 
+                    src="/testimonial3.jpg" 
+                    alt="Michelle Zhang" 
+                    className="w-12 h-12 rounded-full object-cover"
+                    onError={(e) => {
+                      e.currentTarget.src = "https://images.unsplash.com/photo-1534751516642-a1af1ef26a56?ixlib=rb-4.0.3&auto=format&fit=crop&w=256&h=256&q=80";
+                    }}
+                  />
                 </div>
                 <div>
                   <h3 className="font-semibold">Michelle Zhang</h3>
