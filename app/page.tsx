@@ -2,9 +2,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { UserAuthForm } from "@/components/user-auth-form";
-import { getServerSession } from "next-auth";
-import { redirect } from "next/navigation";
+// import { UserAuthForm } from "@/components/user-auth-form";
+// import { getServerSession } from "next-auth";
+// import { redirect } from "next/navigation";
 import Balancer from "react-wrap-balancer";
 import { cn } from "@/lib/utils";
 import {
@@ -15,14 +15,15 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { authOptions } from "@/lib/auth/auth-options";
+// import { authOptions } from "@/lib/auth/auth-options";
 
 export default async function Home() {
-  const session = await getServerSession(authOptions);
+  // 移除身份验证逻辑，直接渲染页面内容
+  // const session = await getServerSession(authOptions);
 
-  if (session) {
-    redirect("/dashboard");
-  }
+  // if (session) {
+  //   redirect("/dashboard");
+  // }
 
   return (
     <main className="flex flex-col min-h-screen">
