@@ -29,17 +29,17 @@ export default async function Home() {
       <div className="flex flex-col items-center justify-center flex-1 w-full px-8 py-10 lg:py-20 bg-gradient-to-r from-slate-50 to-slate-100">
         <div className="text-center max-w-3xl">
           <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">
-            👨‍💼 AI Professional Headshot Generator
+            📸 AI Professional Portrait Studio
           </h1>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            Create Your Perfect Business Portrait in 3 Minutes with AI
+            Transform Your Photos into Premium Headshots in Minutes
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <Link 
               href="/signin"
               className="rounded-md bg-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-primary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
             >
-              Generate Now
+              Create Your Portraits
             </Link>
             <a href="#features" className="text-sm font-semibold leading-6">
               View Examples <span aria-hidden="true">→</span>
@@ -50,22 +50,22 @@ export default async function Home() {
 
       <section id="features" className="py-12 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-8">Key Features</h2>
+          <h2 className="text-3xl font-bold text-center mb-8">Why Choose Us</h2>
           <div className="grid md:grid-cols-3 gap-6">
             <div className="bg-white p-6 rounded-lg shadow-sm">
               <div className="text-3xl mb-3">✨</div>
-              <h3 className="text-xl font-semibold mb-2">Lightning Fast</h3>
-              <p>Get your professional headshots in just 3 minutes</p>
+              <h3 className="text-xl font-semibold mb-2">Rapid Results</h3>
+              <p>Premium quality headshots delivered in under 5 minutes</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-sm">
               <div className="text-3xl mb-3">🎯</div>
-              <h3 className="text-xl font-semibold mb-2">Professional Quality</h3>
-              <p>Business-ready portraits for your professional needs</p>
+              <h3 className="text-xl font-semibold mb-2">Studio-Quality Output</h3>
+              <p>Professional results that rival traditional photography</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-sm">
               <div className="text-3xl mb-3">🎨</div>
-              <h3 className="text-xl font-semibold mb-2">Multiple Styles</h3>
-              <p>Choose from various professional styles and backgrounds</p>
+              <h3 className="text-xl font-semibold mb-2">Versatile Styles</h3>
+              <p>Customize with diverse professional backgrounds and looks</p>
             </div>
           </div>
         </div>
@@ -73,35 +73,35 @@ export default async function Home() {
 
       <section className="py-12">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-8">How It Works</h2>
+          <h2 className="text-3xl font-bold text-center mb-8">Simple 4-Step Process</h2>
           <div className="grid md:grid-cols-4 gap-6">
             <div className="text-center">
               <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl font-bold text-primary">1</span>
               </div>
-              <h3 className="font-semibold mb-2">Upload Photos</h3>
-              <p className="text-sm">Upload 3-5 photos of yourself</p>
+              <h3 className="font-semibold mb-2">Upload Images</h3>
+              <p className="text-sm">Share 4-6 clear photos showing different angles</p>
             </div>
             <div className="text-center">
               <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl font-bold text-primary">2</span>
               </div>
-              <h3 className="font-semibold mb-2">Choose Style</h3>
-              <p className="text-sm">Select your preferred professional style</p>
+              <h3 className="font-semibold mb-2">Select Your Look</h3>
+              <p className="text-sm">Browse our collection of professional styles</p>
             </div>
             <div className="text-center">
               <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl font-bold text-primary">3</span>
               </div>
-              <h3 className="font-semibold mb-2">AI Training</h3>
-              <p className="text-sm">Wait for AI to generate your headshots</p>
+              <h3 className="font-semibold mb-2">AI Magic</h3>
+              <p className="text-sm">Our advanced algorithms create your custom portraits</p>
             </div>
             <div className="text-center">
               <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl font-bold text-primary">4</span>
               </div>
-              <h3 className="font-semibold mb-2">Download</h3>
-              <p className="text-sm">Get your professional headshots</p>
+              <h3 className="font-semibold mb-2">Download & Share</h3>
+              <p className="text-sm">Use your new headshots across all platforms</p>
             </div>
           </div>
         </div>
@@ -109,27 +109,27 @@ export default async function Home() {
 
       <section className="py-12 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-8">Perfect For</h2>
+          <h2 className="text-3xl font-bold text-center mb-8">Ideal For</h2>
           <div className="grid md:grid-cols-5 gap-4 text-center">
             <div className="bg-white p-4 rounded-lg shadow-sm">
               <div className="text-3xl mb-2">👨‍💼</div>
-              <h3 className="font-semibold">Business Professionals</h3>
+              <h3 className="font-semibold">Corporate Leaders</h3>
             </div>
             <div className="bg-white p-4 rounded-lg shadow-sm">
               <div className="text-3xl mb-2">🎓</div>
-              <h3 className="font-semibold">Students</h3>
+              <h3 className="font-semibold">Academic Professionals</h3>
             </div>
             <div className="bg-white p-4 rounded-lg shadow-sm">
               <div className="text-3xl mb-2">🎭</div>
-              <h3 className="font-semibold">Content Creators</h3>
+              <h3 className="font-semibold">Digital Influencers</h3>
             </div>
             <div className="bg-white p-4 rounded-lg shadow-sm">
               <div className="text-3xl mb-2">👔</div>
-              <h3 className="font-semibold">Job Seekers</h3>
+              <h3 className="font-semibold">Career Advancers</h3>
             </div>
             <div className="bg-white p-4 rounded-lg shadow-sm">
               <div className="text-3xl mb-2">🎨</div>
-              <h3 className="font-semibold">Creative Professionals</h3>
+              <h3 className="font-semibold">Creative Industry Experts</h3>
             </div>
           </div>
         </div>
@@ -137,7 +137,7 @@ export default async function Home() {
 
       <section className="py-12">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-8">User Testimonials</h2>
+          <h2 className="text-3xl font-bold text-center mb-8">Success Stories</h2>
           <div className="grid md:grid-cols-3 gap-6">
             <div className="bg-white p-6 rounded-lg shadow-sm border">
               <div className="flex items-center mb-4">
@@ -145,13 +145,13 @@ export default async function Home() {
                   <div className="w-12 h-12 rounded-full bg-gray-200"></div>
                 </div>
                 <div>
-                  <h3 className="font-semibold">Sarah Johnson</h3>
+                  <h3 className="font-semibold">Emma Richardson</h3>
                   <div className="text-yellow-500 flex">
                     ★★★★★
                   </div>
                 </div>
               </div>
-              <p className="italic">"Amazing! Got my professional headshots in 3 minutes. Looks better than studio photos!"</p>
+              <p className="italic">"Absolutely impressed! These portraits gave my professional profile an instant upgrade. Worth every cent!"</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-sm border">
               <div className="flex items-center mb-4">
@@ -159,13 +159,13 @@ export default async function Home() {
                   <div className="w-12 h-12 rounded-full bg-gray-200"></div>
                 </div>
                 <div>
-                  <h3 className="font-semibold">Mark Thompson</h3>
+                  <h3 className="font-semibold">David Wilson</h3>
                   <div className="text-yellow-500 flex">
                     ★★★★★
                   </div>
                 </div>
               </div>
-              <p className="italic">"Better quality than traditional photo studios. Worth every penny!"</p>
+              <p className="italic">"The quality surpassed my expectations. My colleagues couldn't believe these weren't taken by a professional photographer."</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-sm border">
               <div className="flex items-center mb-4">
@@ -173,13 +173,13 @@ export default async function Home() {
                   <div className="w-12 h-12 rounded-full bg-gray-200"></div>
                 </div>
                 <div>
-                  <h3 className="font-semibold">Lisa Chen</h3>
+                  <h3 className="font-semibold">Michelle Zhang</h3>
                   <div className="text-yellow-500 flex">
                     ★★★★★
                   </div>
                 </div>
               </div>
-              <p className="italic">"Best value for money, highly recommended. Updated my LinkedIn profile immediately!"</p>
+              <p className="italic">"Perfect for my executive LinkedIn profile. Received compliments within hours of updating my headshot!"</p>
             </div>
           </div>
         </div>
@@ -187,23 +187,23 @@ export default async function Home() {
 
       <section className="py-12 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-8">Frequently Asked Questions</h2>
+          <h2 className="text-3xl font-bold text-center mb-8">Common Questions</h2>
           <div className="max-w-3xl mx-auto">
             <div className="mb-4">
-              <h3 className="font-semibold text-lg mb-2">How many photos do I need to upload?</h3>
-              <p>We recommend 3-5 photos from different angles for best results.</p>
+              <h3 className="font-semibold text-lg mb-2">What's the optimal number of photos to upload?</h3>
+              <p>We recommend 4-6 high-quality photos with varied expressions and angles for optimal results.</p>
             </div>
             <div className="mb-4">
-              <h3 className="font-semibold text-lg mb-2">How long does generation take?</h3>
-              <p>Usually 3-5 minutes to complete the AI training and generation.</p>
+              <h3 className="font-semibold text-lg mb-2">What's the processing timeframe?</h3>
+              <p>Your portfolio of professional portraits will be ready in just 3-5 minutes.</p>
             </div>
             <div className="mb-4">
-              <h3 className="font-semibold text-lg mb-2">What styles are available?</h3>
-              <p>Business, Casual, Artistic, and more. You can preview all styles in the app.</p>
+              <h3 className="font-semibold text-lg mb-2">What professional styles do you offer?</h3>
+              <p>Executive, Corporate, Creative, Academic, and more - all customizable to your preferences.</p>
             </div>
             <div className="mb-4">
-              <h3 className="font-semibold text-lg mb-2">Can I use these photos commercially?</h3>
-              <p>Yes, all generated photos are royalty-free and can be used for personal and commercial purposes.</p>
+              <h3 className="font-semibold text-lg mb-2">Are there usage restrictions?</h3>
+              <p>None! Your generated portraits are yours to use for any personal or professional purpose.</p>
             </div>
           </div>
         </div>
@@ -213,7 +213,7 @@ export default async function Home() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <h3 className="font-bold text-lg mb-4">AI Headshot Generator</h3>
+              <h3 className="font-bold text-lg mb-4">AI Professional Portrait Studio</h3>
               <p className="text-gray-300">Create professional headshots in minutes with AI technology.</p>
             </div>
             <div>
@@ -235,14 +235,13 @@ export default async function Home() {
               </ul>
             </div>
             <div>
-              <h3 className="font-bold text-lg mb-4">Contact Us</h3>
-              <p className="text-gray-300">📧 Email: support@yourdomain.com</p>
-              <p className="text-gray-300">💬 Live Chat: Available 24/7</p>
-              <p className="text-gray-300">🌐 Hours: Mon-Fri 9:00-18:00 EST</p>
+              <h3 className="font-bold text-lg mb-4">Get in Touch</h3>
+              <p className="text-gray-300">📧 Email: chenyqyq17666@gmail.com</p>
+              <p className="text-gray-300">🌐 Business Hours: Mon-Fri 8:00-20:00 GMT</p>
             </div>
           </div>
           <div className="mt-8 pt-6 border-t border-gray-800 text-center text-gray-400">
-            <p>© 2024 AI Headshot Generator. All rights reserved.</p>
+            <p>© 2024 AI Professional Portrait Studio. All rights reserved.</p>
           </div>
         </div>
       </footer>

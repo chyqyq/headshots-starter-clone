@@ -52,7 +52,7 @@ export const Login = ({
         title: "Something went wrong",
         variant: "destructive",
         description:
-          "Please try again, if the problem persists, contact us at hello@tryleap.ai",
+          "Please try again, if the problem persists, contact us at chenyqyq17666@gmail.com",
         duration: 5000,
       });
     }
