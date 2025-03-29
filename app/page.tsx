@@ -66,7 +66,7 @@ export default function Home() {
           
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <Link 
-              href="/signin"
+              href="/login"
               className="rounded-md bg-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-primary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
             >
               Create Your Portraits
@@ -77,29 +77,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-      <section id="features" className="py-12 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-8">Why Choose Us</h2>
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <div className="text-3xl mb-3">✨</div>
-              <h3 className="text-xl font-semibold mb-2">Rapid Results</h3>
-              <p>Premium quality headshots delivered in under 5 minutes</p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <div className="text-3xl mb-3">🎯</div>
-              <h3 className="text-xl font-semibold mb-2">Studio-Quality Output</h3>
-              <p>Professional results that rival traditional photography</p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <div className="text-3xl mb-3">🎨</div>
-              <h3 className="text-xl font-semibold mb-2">Versatile Styles</h3>
-              <p>Customize with diverse professional backgrounds and looks</p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       <section className="py-12">
         <div className="container mx-auto px-4">
@@ -195,6 +172,57 @@ export default function Home() {
 
       <section className="py-12">
         <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Why Choose Us 部分 */}
+            <div>
+              <h2 className="text-3xl font-bold text-center mb-8">Why Choose Us</h2>
+              <div className="grid gap-6">
+                <div className="bg-white p-6 rounded-lg shadow-sm">
+                  <div className="text-3xl mb-3">✨</div>
+                  <h3 className="text-xl font-semibold mb-2">Rapid Results</h3>
+                  <p>Premium quality headshots delivered in under 5 minutes</p>
+                </div>
+                <div className="bg-white p-6 rounded-lg shadow-sm">
+                  <div className="text-3xl mb-3">🎯</div>
+                  <h3 className="text-xl font-semibold mb-2">Studio-Quality Output</h3>
+                  <p>Professional results that rival traditional photography</p>
+                </div>
+                <div className="bg-white p-6 rounded-lg shadow-sm">
+                  <div className="text-3xl mb-3">🎨</div>
+                  <h3 className="text-xl font-semibold mb-2">Versatile Styles</h3>
+                  <p>Customize with diverse professional backgrounds and looks</p>
+                </div>
+              </div>
+            </div>
+            
+            {/* Common Questions 部分 */}
+            <div>
+              <h2 className="text-3xl font-bold text-center mb-8">Common Questions</h2>
+              <div className="space-y-4">
+                <div className="bg-white p-6 rounded-lg shadow-sm">
+                  <h3 className="font-semibold text-lg mb-2">What's the optimal number of photos to upload?</h3>
+                  <p>We recommend 4-6 high-quality photos with varied expressions and angles for optimal results.</p>
+                </div>
+                <div className="bg-white p-6 rounded-lg shadow-sm">
+                  <h3 className="font-semibold text-lg mb-2">What's the processing timeframe?</h3>
+                  <p>Your portfolio of professional portraits will be ready in just 3-5 minutes.</p>
+                </div>
+                <div className="bg-white p-6 rounded-lg shadow-sm">
+                  <h3 className="font-semibold text-lg mb-2">What professional styles do you offer?</h3>
+                  <p>Executive, Corporate, Creative, Academic, and more - all customizable to your preferences.</p>
+                </div>
+                <div className="bg-white p-6 rounded-lg shadow-sm">
+                  <h3 className="font-semibold text-lg mb-2">Are there usage restrictions?</h3>
+                  <p>None! Your generated portraits are yours to use for any personal or professional purpose.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-12 bg-gray-50">
+        <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-8">Success Stories</h2>
           <div className="grid md:grid-cols-3 gap-6">
             <div className="bg-white p-6 rounded-lg shadow-sm border">
@@ -250,30 +278,6 @@ export default function Home() {
                 </div>
               </div>
               <p className="italic">"Perfect for my executive LinkedIn profile. Received compliments within hours of updating my headshot!"</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-12 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-8">Common Questions</h2>
-          <div className="max-w-3xl mx-auto">
-            <div className="mb-4">
-              <h3 className="font-semibold text-lg mb-2">What's the optimal number of photos to upload?</h3>
-              <p>We recommend 4-6 high-quality photos with varied expressions and angles for optimal results.</p>
-            </div>
-            <div className="mb-4">
-              <h3 className="font-semibold text-lg mb-2">What's the processing timeframe?</h3>
-              <p>Your portfolio of professional portraits will be ready in just 3-5 minutes.</p>
-            </div>
-            <div className="mb-4">
-              <h3 className="font-semibold text-lg mb-2">What professional styles do you offer?</h3>
-              <p>Executive, Corporate, Creative, Academic, and more - all customizable to your preferences.</p>
-            </div>
-            <div className="mb-4">
-              <h3 className="font-semibold text-lg mb-2">Are there usage restrictions?</h3>
-              <p>None! Your generated portraits are yours to use for any personal or professional purpose.</p>
             </div>
           </div>
         </div>
