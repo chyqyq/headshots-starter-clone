@@ -1,3 +1,5 @@
+"use client";
+
 // app/page.tsx
 import Image from "next/image";
 import Link from "next/link";
@@ -7,6 +9,7 @@ import { Button } from "@/components/ui/button";
 // import { redirect } from "next/navigation";
 // import Balancer from "react-wrap-balancer";
 import { cn } from "@/lib/utils";
+import { useState } from "react";
 import {
   Card,
   CardContent,
@@ -17,7 +20,7 @@ import {
 } from "@/components/ui/card";
 // import { authOptions } from "@/lib/auth/auth-options";
 
-export default async function Home() {
+export default function Home() {
   // 移除身份验证逻辑，直接渲染页面内容
   // const session = await getServerSession(authOptions);
 
@@ -40,32 +43,23 @@ export default async function Home() {
           <div className="mt-8 grid grid-cols-3 gap-4 max-w-3xl mx-auto">
             <div className="overflow-hidden rounded-lg shadow-md bg-white">
               <img 
-                src="/sample-1.jpg" 
+                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=256&h=256&q=80" 
                 alt="Professional Headshot Sample 1" 
                 className="w-full h-auto object-cover"
-                onError={(e) => {
-                  e.currentTarget.src = "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=256&h=256&q=80";
-                }}
               />
             </div>
             <div className="overflow-hidden rounded-lg shadow-md bg-white">
               <img 
-                src="/sample-2.jpg" 
+                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=256&h=256&q=80" 
                 alt="Professional Headshot Sample 2" 
                 className="w-full h-auto object-cover"
-                onError={(e) => {
-                  e.currentTarget.src = "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=256&h=256&q=80";
-                }}
               />
             </div>
             <div className="overflow-hidden rounded-lg shadow-md bg-white">
               <img 
-                src="/sample-3.jpg" 
+                src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=256&h=256&q=80" 
                 alt="Professional Headshot Sample 3" 
                 className="w-full h-auto object-cover"
-                onError={(e) => {
-                  e.currentTarget.src = "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=256&h=256&q=80";
-                }}
               />
             </div>
           </div>
@@ -119,12 +113,9 @@ export default async function Home() {
               <p className="text-sm mb-4">Share 4-6 clear photos showing different angles</p>
               <div className="overflow-hidden rounded-lg shadow-md bg-white h-40 flex items-center justify-center">
                 <img 
-                  src="/upload-sample.jpg" 
+                  src="https://images.unsplash.com/photo-1633674443877-4130ecd087c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=256&h=256&q=80" 
                   alt="Upload Images Example" 
                   className="w-full h-full object-cover"
-                  onError={(e) => {
-                    e.currentTarget.src = "https://images.unsplash.com/photo-1633674443877-4130ecd087c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=256&h=256&q=80";
-                  }}
                 />
               </div>
             </div>
@@ -136,12 +127,9 @@ export default async function Home() {
               <p className="text-sm mb-4">Browse our collection of professional styles</p>
               <div className="overflow-hidden rounded-lg shadow-md bg-white h-40 flex items-center justify-center">
                 <img 
-                  src="/style-sample.jpg" 
+                  src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&auto=format&fit=crop&w=256&h=256&q=80" 
                   alt="Select Style Example" 
                   className="w-full h-full object-cover"
-                  onError={(e) => {
-                    e.currentTarget.src = "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&auto=format&fit=crop&w=256&h=256&q=80";
-                  }}
                 />
               </div>
             </div>
@@ -153,12 +141,9 @@ export default async function Home() {
               <p className="text-sm mb-4">Our advanced algorithms create your custom portraits</p>
               <div className="overflow-hidden rounded-lg shadow-md bg-white h-40 flex items-center justify-center">
                 <img 
-                  src="/processing-sample.jpg" 
+                  src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=256&h=256&q=80" 
                   alt="AI Processing Example" 
                   className="w-full h-full object-cover"
-                  onError={(e) => {
-                    e.currentTarget.src = "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=256&h=256&q=80";
-                  }}
                 />
               </div>
             </div>
@@ -170,12 +155,9 @@ export default async function Home() {
               <p className="text-sm mb-4">Use your new headshots across all platforms</p>
               <div className="overflow-hidden rounded-lg shadow-md bg-white h-40 flex items-center justify-center">
                 <img 
-                  src="/result-sample.jpg" 
+                  src="https://images.unsplash.com/photo-1566492031773-4f4e44671857?ixlib=rb-4.0.3&auto=format&fit=crop&w=256&h=256&q=80" 
                   alt="Final Results Example" 
                   className="w-full h-full object-cover"
-                  onError={(e) => {
-                    e.currentTarget.src = "https://images.unsplash.com/photo-1566492031773-4f4e44671857?ixlib=rb-4.0.3&auto=format&fit=crop&w=256&h=256&q=80";
-                  }}
                 />
               </div>
             </div>
@@ -219,12 +201,9 @@ export default async function Home() {
               <div className="flex items-center mb-4">
                 <div className="mr-4">
                   <img 
-                    src="/testimonial1.jpg" 
+                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=256&h=256&q=80" 
                     alt="Emma Richardson" 
                     className="w-12 h-12 rounded-full object-cover"
-                    onError={(e) => {
-                      e.currentTarget.src = "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=256&h=256&q=80";
-                    }}
                   />
                 </div>
                 <div>
@@ -240,12 +219,9 @@ export default async function Home() {
               <div className="flex items-center mb-4">
                 <div className="mr-4">
                   <img 
-                    src="/testimonial2.jpg" 
+                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=256&h=256&q=80" 
                     alt="David Wilson" 
                     className="w-12 h-12 rounded-full object-cover"
-                    onError={(e) => {
-                      e.currentTarget.src = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=256&h=256&q=80";
-                    }}
                   />
                 </div>
                 <div>
@@ -261,12 +237,9 @@ export default async function Home() {
               <div className="flex items-center mb-4">
                 <div className="mr-4">
                   <img 
-                    src="/testimonial3.jpg" 
+                    src="https://images.unsplash.com/photo-1534751516642-a1af1ef26a56?ixlib=rb-4.0.3&auto=format&fit=crop&w=256&h=256&q=80" 
                     alt="Michelle Zhang" 
                     className="w-12 h-12 rounded-full object-cover"
-                    onError={(e) => {
-                      e.currentTarget.src = "https://images.unsplash.com/photo-1534751516642-a1af1ef26a56?ixlib=rb-4.0.3&auto=format&fit=crop&w=256&h=256&q=80";
-                    }}
                   />
                 </div>
                 <div>
